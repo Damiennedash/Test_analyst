@@ -1,0 +1,89 @@
+eda_01_volumetrie_tables.sql
+SELECT 'demandes_service_public' AS table_name, COUNT(*) AS nb_lignes FROM demandes_service_public
+UNION ALL
+SELECT 'communes', COUNT(*) FROM communes
+UNION ALL
+SELECT 'developpement_regional', COUNT(*) FROM developpement_regional
+UNION ALL
+SELECT 'documents_administratifs_ext', COUNT(*) FROM documents_administratifs_ext
+UNION ALL
+SELECT 'donnees_socioeconomiques', COUNT(*) FROM donnees_socioeconomiques
+UNION ALL
+SELECT 'logs_activite', COUNT(*) FROM logs_activite
+UNION ALL
+SELECT 'reseau_routier_ext', COUNT(*) FROM reseau_routier_ext;
+
+eda_02_volume_demandes_region.sql
+SELECT region,
+       SUM(nombre_demandes) AS volume_demandes
+FROM demandes_service_public
+GROUP BY region
+ORDER BY volume_demandes DESC;
+
+eda_03_demandes_type_document.sql
+SELECT type_document,
+       SUM(nombre_demandes) AS total_demandes
+FROM demandes_service_public
+GROUP BY type_document
+ORDER BY total_demandes DESC;
+
+eda_04_delais_traitement.sql
+SELECT 
+    MIN(delai_traitement_jours) AS delai_min,
+    MAX(delai_traitement_jours) AS delai_max,
+    AVG(delai_traitement_jours) AS delai_moyen
+FROM demandes_service_public;
+
+SELECT type_document,
+       AVG(delai_traitement_jours) AS delai_moyen
+FROM demandes_service_public
+GROUP BY type_document
+ORDER BY delai_moyen DESC;
+
+eda_05_taux_rejet.sql
+SELECT type_document,
+       AVG(taux_rejet) AS taux_rejet_moyen
+FROM demandes_service_public
+GROUP BY type_document
+ORDER BY taux_rejet_moyen DESC;
+
+SELECT motif_demande,
+       COUNT(*) AS nb_rejets
+FROM demandes_service_public
+WHERE statut_demande = 'Rejetée'
+GROUP BY motif_demande
+ORDER BY nb_rejets DESC;
+
+eda_06_analyse_temporelle.sql
+SELECT 
+    EXTRACT(YEAR FROM date_demande) AS annee,
+    EXTRACT(MONTH FROM date_demande) AS mois,
+    SUM(nombre_demandes) AS total_demandes
+FROM demandes_service_public
+GROUP BY annee, mois
+ORDER BY annee, mois;
+
+eda_07_developpement_delais.sql
+SELECT d.region,
+       AVG(d.delai_traitement_jours) AS delai_moyen,
+       AVG(r.indice_developpement) AS indice_developpement_moyen
+FROM demandes_service_public d
+JOIN developpement_regional r
+  ON d.region = r.region
+ AND d.prefecture = r.prefecture
+ AND d.commune = r.commune
+GROUP BY d.region;
+
+eda_08_performance_centres.sql
+SELECT centre_id,
+       AVG(nombre_traite) AS volume_traite_moyen,
+       AVG(temps_attente_moyen_minutes) AS attente_moyenne
+FROM logs_activite
+GROUP BY centre_id
+ORDER BY attente_moyenne DESC;
+
+eda_09_accessibilite_routiere.sql
+SELECT etat_route,
+       AVG(temps_parcours_heures) AS temps_parcours_moyen
+FROM reseau_routier_ext
+GROUP BY etat_route;

@@ -1,0 +1,76 @@
+clean_01_detection_valeurs_manquantes.sql
+SELECT
+    SUM(CASE WHEN taux_rejet IS NULL THEN 1 ELSE 0 END) AS taux_rejet_null,
+    SUM(CASE WHEN delai_traitement_jours IS NULL THEN 1 ELSE 0 END) AS delai_null,
+    SUM(CASE WHEN motif_demande IS NULL THEN 1 ELSE 0 END) AS motif_null
+FROM demandes_service_public;
+
+clean_02_imputation_taux_rejet.sql
+UPDATE demandes_service_public
+SET taux_rejet = 0
+WHERE taux_rejet IS NULL
+  AND statut_demande <> 'Rejetée';
+
+clean_03_detection_incoherences.sql
+SELECT *
+FROM demandes_service_public
+WHERE delai_traitement_jours < 0
+   OR delai_traitement_jours > 180;
+
+SELECT *
+FROM demandes_service_public
+WHERE age_demandeur < 0
+   OR age_demandeur > 120;
+
+clean_04_suppression_valeurs_invalides.sql
+DELETE FROM demandes_service_public
+WHERE nombre_demandes <= 0;
+
+clean_05_harmonisation_dates.sql
+ALTER TABLE demandes_service_public
+ALTER COLUMN date_demande TYPE DATE
+USING date_demande::DATE;
+
+clean_06_harmonisation_geographique.sql
+UPDATE demandes_service_public
+SET commune = INITCAP(commune);
+
+UPDATE communes
+SET commune = INITCAP(commune);
+
+clean_07_normalisation_statuts.sql
+UPDATE demandes_service_public
+SET statut_demande = 'Traitee'
+WHERE statut_demande IN ('Traitée', 'Traitee');
+
+clean_08_detection_doublons.sql
+SELECT demande_id, COUNT(*)
+FROM demandes_service_public
+GROUP BY demande_id
+HAVING COUNT(*) > 1;
+
+clean_09_vue_dataset_final.sql
+CREATE OR REPLACE VIEW vw_demandes_analyse AS
+SELECT
+    d.demande_id,
+    d.date_demande,
+    d.region,
+    d.prefecture,
+    d.commune,
+    d.type_document,
+    d.nombre_demandes,
+    d.delai_traitement_jours,
+    d.taux_rejet,
+    d.statut_demande,
+    c.latitude,
+    c.longitude,
+    s.population,
+    s.revenu_moyen_fcfa,
+    r.indice_developpement
+FROM demandes_service_public d
+LEFT JOIN communes c
+  ON d.commune = c.commune
+LEFT JOIN donnees_socioeconomiques s
+  ON d.commune = s.commune
+LEFT JOIN developpement_regional r
+  ON d.commune = r.commune;
