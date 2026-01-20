@@ -1,0 +1,57 @@
+﻿centres_service_centre_id,centres_service_nom_centre,centres_service_type_centre,centres_service_region,centres_service_prefecture,centres_service_commune,centres_service_quartier,centres_service_latitude,centres_service_longitude,centres_service_personnel_capacite_jour,centres_service_nombre_guichets,centres_service_heures_ouverture,centres_service_horaire_nuit,centres_service_equipement_numerique,centres_service_date_ouverture,centres_service_statut_centre
+CT001,Centre Principal Dapaong,Principal,Savanes,Tône,Dapaong,Administratif,"10,592","0,4742",300,12,07:30-17:30,Non,Complet,dimanche 14 février 2016,Actif
+CT002,Centre Kévé,Secondaire,Maritime,Ave,Kévé,Zone industrielle,"6,2815","1,2182",63,2,08:00-16:00,Non,Limite,lundi 14 septembre 2020,Actif
+CT003,Centre Gando,Secondaire,Savanes,Oti-Sud,Gando,Zone industrielle,"10,2629","0,2525",98,2,08:00-16:00,Non,Partiel,mardi 2 juin 2015,Actif
+CT004,Centre Pagouda,Secondaire,Kara,Binah,Pagouda,Gare routière,"9,4247","1,1698",78,6,08:00-16:00,Non,Partiel,mardi 3 décembre 2019,Actif
+CT005,Centre Tchamba,Secondaire,Centrale,Tchamba,Tchamba,Carrefour,"8,5008","0,9988",62,3,08:00-16:00,Non,Limite,jeudi 20 octobre 2022,Actif
+CT006,Centre Principal Tsévié,Principal,Maritime,Zio,Tsévié,Marché,"6,4705","1,4344",338,8,07:30-17:30,Non,Complet,dimanche 28 août 2022,Actif
+CT007,Centre Bassar,Secondaire,Kara,Bassar,Bassar,Poste,"9,42","1,0817",59,6,08:00-16:00,Non,Partiel,mardi 11 février 2020,Actif
+CT008,Centre Principal Kpalimé,Principal,Plateaux,Kloto,Kpalimé,Préfecture,"7,6305","0,9746",355,11,07:30-17:30,Non,Complet,mercredi 12 juillet 2017,Actif
+CT009,Centre Tchamba,Secondaire,Centrale,Tchamba,Tchamba,Résidentiel,"8,791","1,0719",61,2,08:00-16:00,Non,Limite,mercredi 11 mai 2022,Actif
+CT010,Centre Principal Kara,Principal,Kara,Kozah,Kara,Préfecture,"9,324","0,7628",274,13,07:30-17:30,Non,Complet,vendredi 24 novembre 2023,Actif
+CT011,Centre Pagouda,Secondaire,Kara,Binah,Pagouda,Préfecture,"9,4996","0,9323",82,6,08:00-16:00,Non,Partiel,jeudi 30 novembre 2017,Actif
+CT012,Centre Sotouboua,Secondaire,Centrale,Sotouboua,Sotouboua,Résidentiel,"8,2161","1,3118",54,5,08:00-16:00,Non,Partiel,vendredi 15 juillet 2022,Actif
+CT013,Centre Tchamba,Secondaire,Centrale,Tchamba,Tchamba,Centre ville,"8,722","0,9914",114,2,08:00-16:00,Non,Limite,mercredi 19 octobre 2016,Actif
+CT014,Centre Tohoun,Secondaire,Plateaux,Moyen-Mono,Tohoun,Administratif,"6,9574","0,6103",63,2,08:00-16:00,Non,Partiel,samedi 10 janvier 2015,Actif
+CT015,Centre Danyi-Apéyémé,Secondaire,Plateaux,Danyi,Danyi-Apéyémé,Carrefour,"7,5719","0,8589",74,2,08:00-16:00,Non,Partiel,mercredi 14 juin 2017,Actif
+CT016,Centre Lomé,Secondaire,Maritime,Golfe,Lomé,Administratif,"6,2788","1,3586",106,2,08:00-16:00,Non,Partiel,samedi 8 juillet 2023,Actif
+CT017,Centre Tandjouaré,Secondaire,Savanes,Tandjouaré,Tandjouaré,Administratif,"10,5077","0,7187",114,3,08:00-16:00,Non,Limite,samedi 10 juin 2023,Actif
+CT018,Centre Bafilo,Secondaire,Kara,Assoli,Bafilo,Centre ville,"9,3919","1,366",37,3,08:00-16:00,Non,Limite,samedi 25 juillet 2015,Actif
+CT019,Centre Aného,Secondaire,Maritime,Lacs,Aného,Carrefour,"6,5515","1,5809",101,6,08:00-16:00,Non,Partiel,dimanche 9 juillet 2023,Actif
+CT020,Centre Vogan,Secondaire,Maritime,Vo,Vogan,Administratif,"6,3093","1,3497",32,2,08:00-16:00,Non,Partiel,mardi 3 septembre 2019,Actif
+CT021,Centre Djarkpanga,Secondaire,Centrale,Mo,Djarkpanga,Carrefour,"8,9139","1,2232",118,2,08:00-16:00,Non,Limite,vendredi 28 juin 2019,Actif
+CT022,Centre Principal Sokodé,Principal,Centrale,Tchaoudjo,Sokodé,Centre ville,"8,5795","0,9275",273,10,07:30-17:30,Oui,Complet,samedi 4 avril 2015,Actif
+CT023,Centre Aného,Secondaire,Maritime,Lacs,Aného,Hôpital,"6,4766","1,6806",35,5,08:00-16:00,Non,Limite,mardi 25 décembre 2018,Actif
+CT024,Centre Aného,Secondaire,Maritime,Lacs,Aného,Centre ville,"6,3565","1,5655",88,6,08:00-16:00,Non,Partiel,lundi 10 août 2020,Actif
+CT025,Centre Tchamba,Secondaire,Centrale,Tchamba,Tchamba,Poste,"9,05","1,2894",80,3,08:00-16:00,Non,Partiel,dimanche 6 mars 2016,Actif
+CT026,Centre Principal Sokodé,Principal,Centrale,Tchaoudjo,Sokodé,Résidentiel,"8,9819","0,831",345,11,07:30-17:30,Non,Complet,vendredi 16 octobre 2020,Actif
+CT027,Centre Naki-Est,Secondaire,Savanes,Kpendjal-Ouest,Naki-Est,Poste,"10,3158","0,5043",88,4,08:00-16:00,Non,Partiel,dimanche 15 décembre 2019,Actif
+CT028,Centre Blitta-Gare,Secondaire,Centrale,Blitta,Blitta-Gare,Hôpital,"8,5788","1,1986",39,3,08:00-16:00,Non,Partiel,lundi 5 juillet 2021,Actif
+CT029,Centre Principal Sokodé,Principal,Centrale,Tchaoudjo,Sokodé,Zone industrielle,"8,876","1,203",358,13,07:30-17:30,Non,Complet,samedi 15 juillet 2023,Actif
+CT030,Centre Tandjouaré,Secondaire,Savanes,Tandjouaré,Tandjouaré,Gare routière,"11,0022","0,7954",45,4,08:00-16:00,Non,Partiel,mardi 23 février 2016,Actif
+CT031,Centre Vogan,Secondaire,Maritime,Vo,Vogan,Centre ville,"6,2145","1,4578",64,6,08:00-16:00,Non,Limite,jeudi 27 juillet 2017,Actif
+CT032,Centre Dapaong,Secondaire,Savanes,Tône,Dapaong,Gare routière,"10,1609","0,0987",59,3,08:00-16:00,Non,Partiel,lundi 21 mars 2016,Actif
+CT033,Centre Tabligbo,Secondaire,Maritime,Yoto,Tabligbo,Préfecture,"6,3354","1,2679",115,6,08:00-16:00,Non,Partiel,mercredi 26 octobre 2022,Actif
+CT034,Centre Djarkpanga,Secondaire,Centrale,Mo,Djarkpanga,Résidentiel,"8,7926","1,276",111,5,08:00-16:00,Non,Limite,dimanche 1 mai 2022,Actif
+CT035,Centre Principal Kpalimé,Principal,Plateaux,Kloto,Kpalimé,Carrefour,"7,2829","1,1346",229,8,07:30-17:30,Oui,Complet,lundi 27 septembre 2021,Actif
+CT036,Centre Principal Tsévié,Principal,Maritime,Zio,Tsévié,Résidentiel,"6,2606","1,3498",206,8,07:30-17:30,Oui,Complet,lundi 14 novembre 2016,Actif
+CT037,Centre Principal Lomé,Principal,Maritime,Golfe,Lomé,Poste,"6,6032","1,327",324,14,07:30-17:30,Non,Complet,lundi 20 novembre 2023,Actif
+CT038,Centre Guérin-Kouka,Secondaire,Kara,Dankpen,Guérin-Kouka,Centre ville,"9,6594","1,1678",81,6,08:00-16:00,Non,Partiel,lundi 24 avril 2023,Actif
+CT039,Centre Lomé,Secondaire,Maritime,Golfe,Lomé,Carrefour,"6,2248","1,3339",110,4,08:00-16:00,Non,Limite,jeudi 6 décembre 2018,Actif
+CT040,Centre Sokodé,Secondaire,Centrale,Tchaoudjo,Sokodé,Résidentiel,"8,9743","1,1478",118,2,08:00-16:00,Non,Partiel,mercredi 4 mars 2020,Actif
+CT041,Centre Kévé,Secondaire,Maritime,Ave,Kévé,Administratif,"6,2406","1,5318",113,3,08:00-16:00,Non,Partiel,mercredi 24 août 2022,Actif
+CT042,Centre Principal Kara,Principal,Kara,Kozah,Kara,Centre ville,"9,4131","0,8157",294,14,07:30-17:30,Non,Complet,lundi 10 août 2020,Actif
+CT043,Centre Niamtougou,Secondaire,Kara,Doufelgou,Niamtougou,Marché,"9,5764","0,9782",41,2,08:00-16:00,Non,Partiel,jeudi 21 décembre 2023,Actif
+CT044,Centre Amlamé,Secondaire,Plateaux,Amou,Amlamé,Gare routière,"7,632","1,1313",54,2,08:00-16:00,Non,Partiel,samedi 26 décembre 2020,Actif
+CT045,Centre Aného,Secondaire,Maritime,Lacs,Aného,Zone industrielle,"6,5721","1,2267",100,2,08:00-16:00,Non,Limite,samedi 21 janvier 2017,Actif
+CT046,Centre Djarkpanga,Secondaire,Centrale,Mo,Djarkpanga,Hôpital,"8,4259","1,2054",87,3,08:00-16:00,Non,Partiel,vendredi 22 mai 2015,Actif
+CT047,Centre Kanté,Secondaire,Kara,Kéran,Kanté,Carrefour,"9,9934","0,8713",74,4,08:00-16:00,Non,Partiel,lundi 10 avril 2023,Actif
+CT048,Centre Kévé,Secondaire,Maritime,Ave,Kévé,Marché,"6,3456","1,5279",87,6,08:00-16:00,Non,Partiel,lundi 26 octobre 2015,Actif
+CT049,Centre Guérin-Kouka,Secondaire,Kara,Dankpen,Guérin-Kouka,Carrefour,"9,9226","1,1138",77,5,08:00-16:00,Non,Partiel,vendredi 28 septembre 2018,Actif
+CT050,Centre Mandouri,Secondaire,Savanes,Kpendjal,Mandouri,Marché,"10,2819","0,6347",82,5,08:00-16:00,Non,Partiel,vendredi 22 mai 2015,Actif
+CT051,Centre Sotouboua,Secondaire,Centrale,Sotouboua,Sotouboua,Résidentiel,"9,1659","0,8743",109,2,08:00-16:00,Non,Partiel,dimanche 29 mai 2022,Actif
+CT052,Centre Naki-Est,Secondaire,Savanes,Kpendjal-Ouest,Naki-Est,Poste,"10,6172","0,5627",106,5,08:00-16:00,Non,Partiel,samedi 12 mars 2016,Actif
+CT053,Centre Tchamba,Secondaire,Centrale,Tchamba,Tchamba,Résidentiel,"8,6851","0,8158",45,5,08:00-16:00,Non,Partiel,mardi 5 décembre 2023,Actif
+CT054,Centre Principal Sokodé,Principal,Centrale,Tchaoudjo,Sokodé,Poste,"8,6473","1,0778",248,12,07:30-17:30,Non,Complet,mardi 15 décembre 2020,Actif
+CT055,Centre Notsé,Secondaire,Plateaux,Haho,Notsé,Gare routière,"7,1331","0,7312",85,2,08:00-16:00,Non,Partiel,samedi 25 juillet 2020,Actif
+
